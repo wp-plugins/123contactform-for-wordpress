@@ -37,9 +37,9 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 
 == Screenshots ==
 
-1. screenshot-123-contact-form-1.png
-2. screenshot-123-contact-form-2.png
-3. screenshot-123-contact-form-3.png
+1. Copy the code that you get
+2. Paste it in your WordPress post
+3. Sample form in a WordPress post
 
 == Changelog ==
 
