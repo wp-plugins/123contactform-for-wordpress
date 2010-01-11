@@ -37,9 +37,9 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 
 == Screenshots ==
 
-1. [screenshot-1](http://www.123contactform.com/img/wordpress-contact-form1.png)
-2. [screenshot-2](http://www.123contactform.com/img/wordpress-contact-form2.png)
-3. [screenshot-3](http://www.123contactform.com/img/wordpress-contact-form3.png)
+1. screenshot-123-contact-form-1.png
+2. screenshot-123-contact-form-2.png
+3. screenshot-123-contact-form-3.png
 
 == Changelog ==
 
