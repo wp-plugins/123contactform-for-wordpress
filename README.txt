@@ -20,7 +20,7 @@ Features: captcha, autoresponder, custom "thank you" page, customisable form lay
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. [Sign up](http://www.123contactform.com/signup.html) for a free 123ContactForm account, then login. 
 4. Click **Create new form**, enter a name for your form, enter your email address and click **Save form**, then click **Next**, then click **Next** again.
-5. You are now on the **Get HTML code**. Go to **Option 2b** part of the page, select the code, and copy it to the clipboard (by pressing CTRL+C).
+5. You are now on the **Get HTML code**. Go to **Option 3b** part of the page, select the code, and copy it to the clipboard (by pressing CTRL+C).
 6. Paste the code (by pressing CTRL+V) in the WordPress page where you want the form to appear, and save it.
 
 Usage info, tips and tricks can be found in the [plugin homepage](http://www.123contactform.com/wordpress-contact-form-plugin.html) and [author's blog](http://blog.123contactform.com/category/wordpress-contact-form-plugin/).
@@ -28,7 +28,7 @@ Usage info, tips and tricks can be found in the [plugin homepage](http://www.123
 == Frequently Asked Questions ==
 
 = Is the code that I have to paste in my blog post big ? =
-No, it is very short. It looks like this: *[123-contact-form f123456]* where 123456 is a uniqued form ID you will get.
+No, it is very short. It looks like this: *[123-contact-form i123456]* where 123456 is a uniqued form ID you will get.
 
 = If I change the form after I pasted it in WordPress, shall I paste the code again? =
 No, you don't have to paste the code again
@@ -43,7 +43,10 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 
 == Changelog ==
 
-[See change log in author's blog.](http://blog.123contactform.com/category/wordpress-contact-form-plugin/)
+= 1.0.1 =
+* Added support for iFrame
+
+[See full change log in author's blog.](http://blog.123contactform.com/category/wordpress-contact-form-plugin/)
 
 == Upgrade Notice ==
 

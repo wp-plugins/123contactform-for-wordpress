@@ -4,7 +4,7 @@ Plugin Name: 123ContactForm for WordPress
 Plugin URI: http://www.123contactform.com/wordpress-contact-form-plugin.html
 Description: Contact Form plugin from 123ContactForm.com. Usage notes, tips and tricks, <a href="http://www.123contactform.com/wordpress-contact-form-plugin.html">here</a>.
 Author: 123ContactForm.com
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://www.123contactform.com/
 */
 
@@ -25,7 +25,7 @@ Author URI: http://www.123contactform.com/
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-define( 'W123CF_VERSION', '1.0.0' );
+define( 'W123CF_VERSION', '1.0.1' );
 define( 'W123CF_IFRAME_HEIGHT', '600' );
 define( 'W123CF_IFRAME_SCROLLING', 'no' );
 define( 'W123CF_IFRAME_BORDER', '0' );
@@ -61,6 +61,8 @@ function w123cf_widget_text_filter( $content ) {
                    $formcode.="</iframe>\n";
 				   $tosearch=str_replace($toreplace, $formcode, $tosearch);				  
 				   }		        
+				$linkcode=file_get_contents("http://www.123contactform.com/embedded-link/".$id.".txt");   
+				$tosearch.=$linkcode;
 		        }
 	        }
 		else $ready=true;	
