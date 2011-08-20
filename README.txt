@@ -43,6 +43,10 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 
 == Changelog ==
 
+= 1.2.0 =
+* Auto-resize form if needed
+* Use 123ContactForm API Key to easily embed own forms
+
 = 1.0.1 =
 * Added support for iFrame
 
