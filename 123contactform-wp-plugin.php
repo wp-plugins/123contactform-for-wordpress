@@ -40,23 +40,6 @@ function w123cf_widget_text_filter( $content ) {
 	        if (is_numeric($id))
 	            {		  
 		        $toreplace=substr($tosearch,$i,$j-$i+1);
-
-				/*		        
-			    if ($tosearch[$i+18]=="f")
-			       {				  
-				   $formcode=file_get_contents("http://www.123contactform.com/embedded/".$id.".txt");
-				   $tosearch=str_replace($toreplace, $formcode, $tosearch);
-				   }
-				else    
-				   {				   
-				   $formlink="http://www.123contactform.com/embedded/".$id.".txt";
-				   $formcode="<iframe height=\"".W123CF_IFRAME_HEIGHT."\" width=\"100%\" id=\"contactform123\" name=\"contactform123\" scrolling=\"".W123CF_IFRAME_SCROLLING."\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"".W123CF_IFRAME_BORDER."\" src=\"$formlink\">\n";
-                   $formcode.="<p>Your browser does not support iframes. The contact form cannot be displaied. Please use another contact method (phone, fax etc)</p>\n";
-                   $formcode.="</iframe>\n";
-				   $tosearch=str_replace($toreplace, $formcode, $tosearch);				  
-				   }	
-				*/
-
         
 				$formcode="<script type=\"text/javascript\">var servicedomain=\"www.123contactform.com\"; var cfJsHost = ((\"https:\" == document.location.protocol) ? \"https://\" : \"http://\"); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E\")); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/jsform-$id.js' type='text/javascript'%3E%3C/script%3E\")); </script>";
 				$tosearch=str_replace($toreplace, $formcode, $tosearch);
