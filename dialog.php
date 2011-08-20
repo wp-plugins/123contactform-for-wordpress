@@ -3,7 +3,7 @@ require_once dirname(__FILE__). '/config.php';
 require_once dirname(__FILE__). '/jsonwrapper_helper.php';
 function request($api_key) {
     
-        $url = "http://beta.123contactform.com/wp_dispatcher.php";
+        $url = "http://www.123contactform.com/wp_dispatcher.php";
         
         $res = wp_remote_fopen("{$url}?api_key=".$api_key);
      
