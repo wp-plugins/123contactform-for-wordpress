@@ -20,7 +20,7 @@ function contact_123_add_button($buttons)
 
 function contact_123_register($plugin_array)
 {
-    $url = trim(get_bloginfo('url'), "/")."/wp-content/plugins/123contactform-wp-plugin/editor_plugin.js";
+    $url = trim(get_bloginfo('url'), "/")."/wp-content/plugins/123contactform-for-wordpress/editor_plugin.js";
     $plugin_array['contact_123'] = $url;
     return $plugin_array;
 }

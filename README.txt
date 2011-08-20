@@ -3,7 +3,7 @@ Contributors: 123contactform
 Donate link: http://www.123contactform.com/
 Tags: contact form, order form, contact, form, email, captcha, upload, files, 123contactform
 Requires at least: 2.0.2
-Tested up to: 2.9
+Tested up to: 3.2.1
 Stable tag: 2.0.3
 
 Contact Form plugin from www.123ContactForm.com.
