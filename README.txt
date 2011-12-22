@@ -10,17 +10,17 @@ Contact Form plugin from www.123ContactForm.com
 
 == Description ==
 
-Contact Form plugin from 123ContactForm.com. It requires a free account created on [123ContactForm] (http://www.123contactform.com/signup.html). 
+Contact Form plugin from 123ContactForm.com. It requires a free account created on [123ContactForm] (http://www.123contactform.com/signup.html).  
 Building any type of form and survey for WordPress pages is an enjoyable experience with the user-friendly interface of 123ContactForm. The form generating process takes just 3 easy steps - edit the form, choose settings and publish. Allows adjusting codes. 
 
-Features: 
-- easy form building: real time WYSIWYG editor, form branching (conditional logic for dynamic web forms), file upload fields
-- efficient submissions management: multiple recipients, custom "thank you" page, export data to CSV, reports over submissions
-- security: CAPTCHA and smart CAPTCHA, password protection, SSL encryption
-- style: theme gallery, full CSS customization
-- integration with payment processors: PayPal, Authorize.Net, Google Checkout
-- 3rd party apps integration: SalesForce, VerticalResponse, MailChimp, WebHook, Google+Yahoo Groups, Google Docs
-- mobile version of web forms.
+Features:  
+* easy form building: real time WYSIWYG editor, form branching (conditional logic for dynamic web forms), file upload fields
+* efficient submissions management: multiple recipients, custom "thank you" page, export data to CSV, reports over submissions
+* security: CAPTCHA and smart CAPTCHA, password protection, SSL encryption
+* style: theme gallery, full CSS customization
+* integration with payment processors: PayPal, Authorize.Net, Google Checkout
+* 3rd party apps integration: SalesForce, VerticalResponse, MailChimp, WebHook, Google+Yahoo Groups, Google Docs
+* mobile version of web forms.
 
 == Installation ==
 
@@ -28,23 +28,25 @@ Features:
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 Creating a form
-1. [Sign up](http://www.123contactform.com/signup.html) for a free 123ContactForm account, then login. 
-2. Click **Create new form**, enter a name for your form and edit fields. When completed, go to the next tab and choose Form Settings (including e-mail address for notifications). Once done, access the third tab, Publish Form.
+
+1. [Sign up](http://www.123contactform.com/signup.html) for a free 123ContactForm account, then login.
+2. Click **Create New Form**, enter a name for your form and edit the fields the way you wish. When completed, go to the next tab and choose *Form Settings* (these include the e-mail address for notifications). Once done, access the third tab, *Publish Form*.
 
 Publishing the form
-First method:
-a. In the Publish section (no 4 from above) go to **Option 3b** part of the page, select the code, and copy it to the clipboard (by pressing CTRL+C).
-b. Paste the code (by pressing CTRL+V) in the WordPress page where you want the form to appear and save the post.
-Second method:
-a. After plugin installation and activation, visit My Account section on 123ContactForm. In Account details spot the API key field and press Generate. Copy the API key received.
-b. In the WordPress dashboard, while editing the page in the Visual mode, click on the 123ContactForm icon in the menu. Paste the API key there, press Connect and then choose the form that you want to publish (if you have built several forms you can include as many of them as you want). Press Embed and view the result.
+ 
+First method:  
+a. In the *Publish section* (no 4 from above) go to the *WordPress* section of the page, select the code, and copy it to the clipboard (by pressing CTRL+C).  
+b. Paste the code (by pressing CTRL+V) in the WordPress page where you want the form to appear and save the post.  
+Second method:  
+a. After plugin installation and activation, visit *My Account* section on 123ContactForm. In Account details spot the API key field and press Generate. Copy the API key received.  
+b. In the WordPress dashboard, while editing the page in the Visual mode, click on the 123ContactForm icon in the menu. Paste the API key there, press Connect and then choose the form that you want to publish (if you have built several forms you can include as many of them as you want). Press Embed and view the result.  
 
 
 Usage info, tips and tricks can be found in the [plugin homepage](http://www.123contactform.com/wordpress-contact-form-plugin.html) and [author's blog](http://blog.123contactform.com/category/wordpress-contact-form-plugin/).
 
 == Frequently Asked Questions ==
 
-= Why doesn't my plugin appear in the WordPress menu after unzipping the *123contact-wp-plugin* folder?
+= Why doesn't my plugin appear in the WordPress menu after unzipping the *123contact-wp-plugin* folder? =
 Make sure you have unzipped the folder in the root of the */wp-content/plugins/* directory.
 
 = How can I embed multiple forms on the same WordPress page? =
