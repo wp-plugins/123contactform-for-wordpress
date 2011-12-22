@@ -10,7 +10,7 @@ Contact Form plugin from www.123ContactForm.com.
 
 == Description ==
 
-Contact Form plugin from 123ContactForm.com. It requires a free account on [123ContactForm](http://www.123contactform.com/signup.html).
+Contact Form plugin from 123ContactForm.com. It requires a free account created on [123ContactForm](http://www.123contactform.com/signup.html).
 
 Features: captcha, autoresponder, custom "thank you" page, customisable form layout, reports etc.
 
