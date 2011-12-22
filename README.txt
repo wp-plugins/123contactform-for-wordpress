@@ -59,8 +59,9 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 == Screenshots ==
 
 1. Copy the code that you get
-2. Paste it in your WordPress post
-3. Sample form in a WordPress post
+2. Paste the code in your WordPress post
+3. Or you can use the button in your WordPress editor
+4. Sample form in a WordPress post
 
 == Changelog ==
 
