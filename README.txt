@@ -14,13 +14,13 @@ Contact Form plugin from 123ContactForm.com. It requires a free account created 
 Building any type of form and survey for WordPress pages is an enjoyable experience with the user-friendly interface of 123ContactForm. The form generating process takes just 3 easy steps - edit the form, choose settings and publish. Allows adjusting codes. 
 
 Features:  
-* easy form building: real time WYSIWYG editor, form branching (conditional logic for dynamic web forms), file upload fields
-* efficient submissions management: multiple recipients, custom "thank you" page, export data to CSV, reports over submissions
-* security: CAPTCHA and smart CAPTCHA, password protection, SSL encryption
-* style: theme gallery, full CSS customization
-* integration with payment processors: PayPal, Authorize.Net, Google Checkout
-* 3rd party apps integration: SalesForce, VerticalResponse, MailChimp, WebHook, Google+Yahoo Groups, Google Docs
-* mobile version of web forms.
+* easy form building: real time WYSIWYG editor, form branching (conditional logic for dynamic web forms), file upload fields  
+* efficient submissions management: multiple recipients, custom "thank you" page, export data to CSV, reports over submissions  
+* security: CAPTCHA and smart CAPTCHA, password protection, SSL encryption  
+* style: theme gallery, full CSS customization  
+* integration with payment processors: PayPal, Authorize.Net, Google Checkout  
+* 3rd party apps integration: SalesForce, VerticalResponse, MailChimp, WebHook, Google+Yahoo Groups, Google Docs  
+* mobile version of web forms.  
 
 == Installation ==
 
