@@ -4,7 +4,7 @@ Plugin Name: 123ContactForm for WordPress
 Plugin URI: http://www.123contactform.com/wordpress-contact-form-plugin.html
 Description: Contact Form plugin from 123ContactForm.com. Usage notes, tips and tricks, <a href="http://www.123contactform.com/wordpress-contact-form-plugin.html">here</a>.
 Author: 123ContactForm.com
-Version: 1.2.0
+Version: 1.2.1
 Author URI: http://www.123contactform.com/
 */
 
@@ -43,10 +43,17 @@ function w123cf_widget_text_filter( $content ) {
         
 				$formcode="<script type=\"text/javascript\">var servicedomain=\"www.123contactform.com\"; var cfJsHost = ((\"https:\" == document.location.protocol) ? \"https://\" : \"http://\"); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E\")); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/jsform-$id.js' type='text/javascript'%3E%3C/script%3E\")); </script>";
 				$tosearch=str_replace($toreplace, $formcode, $tosearch);
-
-
-				   
-				$linkcode=file_get_contents("http://www.123contactform.com/embedded-link/".$id.".txt");   
+				  
+				// OLD WAY, $linkcode=file_get_contents("http://www.123contactform.com/embedded-link/".$id.".txt");   
+				
+				$curl = curl_init("http://www.123contactform.com/embedded-link/".$id.".txt");
+				curl_setopt($curl, CURLOPT_HEADER, 0);
+				ob_start();  
+				curl_exec($curl);  
+				curl_close($curl);
+				$linkcode = ob_get_contents();  
+				ob_end_clean();  
+  
 				$tosearch.=$linkcode;
 		        }
 	        }
