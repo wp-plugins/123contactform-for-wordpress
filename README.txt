@@ -66,8 +66,8 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 4. Sample form in a WordPress post
 
 == Changelog ==
-= 1.2.1 =
-* use cURL for fetching the remote file
+= 1.2.2 =
+* use cURL or file_get_contents for fetching the remote file
 
 = 1.2.0 =
 * Auto-resize form if needed
