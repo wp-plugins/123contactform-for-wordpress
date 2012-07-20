@@ -33,7 +33,7 @@ function w123cf_widget_text_filter( $content ) {
 	    $i = strpos($tosearch, "[123-contact-form ");
 	    if ($i !== false) 
 	        {
-	        $j = strpos($tosearch, "]");		
+	        $j = strpos($tosearch, "]", $i);		
 			if ($j===false) return $content; /* form code not closed correctly */
 			
 	        $id = substr($tosearch, $i+19, $j-$i-19);
