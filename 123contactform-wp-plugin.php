@@ -4,7 +4,7 @@ Plugin Name: 123ContactForm for WordPress
 Plugin URI: http://www.123contactform.com/wordpress-contact-form-plugin.html
 Description: Contact Form plugin from 123ContactForm.com. Usage notes, tips and tricks, <a href="http://www.123contactform.com/wordpress-contact-form-plugin.html">here</a>.
 Author: 123ContactForm.com
-Version: 1.2.2
+Version: 1.2.3
 Author URI: http://www.123contactform.com/
 */
 
@@ -40,8 +40,8 @@ function w123cf_widget_text_filter( $content ) {
 	        if (is_numeric($id))
 	            {		  
 		        $toreplace=substr($tosearch,$i,$j-$i+1);
-        
-				$formcode="<script type=\"text/javascript\">var servicedomain=\"www.123contactform.com\"; var cfJsHost = ((\"https:\" == document.location.protocol) ? \"https://\" : \"http://\"); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E\")); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/jsform-$id.js' type='text/javascript'%3E%3C/script%3E\")); </script>";
+
+				$formcode="<script type=\"text/javascript\">var customVars123='';var servicedomain=\"www.123contactform.com\"; var cfJsHost = ((\"https:\" == document.location.protocol) ? \"https://\" : \"http://\"); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E\")); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/jsform-$id.js?\"+customVars123+\"' type='text/javascript'%3E%3C/script%3E\")); </script>";				
 				$tosearch=str_replace($toreplace, $formcode, $tosearch);
 				 				
 				if ( is_callable('curl_init') ) {					

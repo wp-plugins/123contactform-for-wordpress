@@ -66,6 +66,9 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 4. Sample form in a WordPress post
 
 == Changelog ==
+= 1.2.4 =
+* allow custom variables
+
 = 1.2.3 =
 * fix conflict with another plugin
 
