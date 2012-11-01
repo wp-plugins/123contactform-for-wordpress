@@ -4,7 +4,7 @@ Plugin Name: 123ContactForm for WordPress
 Plugin URI: http://www.123contactform.com/wordpress-contact-form-plugin.html
 Description: Contact Form plugin from 123ContactForm.com. Usage notes, tips and tricks, <a href="http://www.123contactform.com/wordpress-contact-form-plugin.html">here</a>.
 Author: 123ContactForm.com
-Version: 1.2.3
+Version: 1.2.4
 Author URI: http://www.123contactform.com/
 */
 
