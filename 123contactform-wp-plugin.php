@@ -35,13 +35,28 @@ function w123cf_widget_text_filter( $content ) {
 	        {
 	        $j = strpos($tosearch, "]", $i);		
 			if ($j===false) return $content; /* form code not closed correctly */
-			
-	        $id = substr($tosearch, $i+19, $j-$i-19);
+		$pos_custom_controls=strpos($tosearch,"control",$i+19);
+	        if(($pos_custom_controls > $i) &&($pos_custom_controls < $j))
+				{//If we face some custom vars inside the WP-content page
+				 $pos1=stripos($tosearch,"i",$i);
+				 $pos2=stripos($tosearch,"control",$i);
+				 $id=substr($tosearch,$pos1,$pos2-$pos1);
+				 $id=str_replace("i","",$id);
+				 $id=str_replace(" ","",$id);
+				 $id=intval($id);
+				 $customVars2=substr($tosearch,$pos2,$j-$pos2);
+				 $customVars2=str_replace("'","",$customVars2);
+				 $customVars2=str_replace('"','',$customVars2);
+				}
+			else
+				$id = substr($tosearch, $i+19, $j-$i-19);
+		
+		
 	        if (is_numeric($id))
 	            {		  
 		        $toreplace=substr($tosearch,$i,$j-$i+1);
 
-				$formcode="<script type=\"text/javascript\">var customVars123='';var servicedomain=\"www.123contactform.com\"; var cfJsHost = ((\"https:\" == document.location.protocol) ? \"https://\" : \"http://\"); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E\")); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/jsform-$id.js?\"+customVars123+\"' type='text/javascript'%3E%3C/script%3E\")); </script>";				
+				$formcode="<script type=\"text/javascript\">var customVars123='$customVars2';var servicedomain=\"www.123contactform.com\"; var cfJsHost = ((\"https:\" == document.location.protocol) ? \"https://\" : \"http://\"); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E\")); document.write(unescape(\"%3Cscript src='\" + cfJsHost + servicedomain + \"/jsform-$id.js?\"+customVars123+\"' type='text/javascript'%3E%3C/script%3E\")); </script>";				
 				$tosearch=str_replace($toreplace, $formcode, $tosearch);
 				 				
 				if ( is_callable('curl_init') ) {					
