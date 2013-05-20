@@ -3,7 +3,7 @@ Contributors: 123contactform
 Donate link: http://www.123contactform.com/
 Tags: contact form, order form, contact, form, email, captcha, upload, files, 123contactform, survey, secure form, 
 Requires at least: 2.0.2
-Tested up to: 3.5.1
+Tested up to: 3.2.1
 Stable tag: 2.0.3
 
 Contact Form plugin from www.123ContactForm.com
@@ -56,7 +56,7 @@ The most effective way is using the API key.
 No, you don't have to paste the code again.
 
 
-Please see [author's blog](http://blog.123contactform.com/category/wordpress-contact-form-plugin/).
+Please see [author's blog](http://blog.123contactform.com/?s=wordpress).
 
 == Screenshots ==
 
@@ -66,14 +66,6 @@ Please see [author's blog](http://blog.123contactform.com/category/wordpress-con
 4. Sample form in a WordPress post
 
 == Changelog ==
-= 1.2.4 =
-* allow custom variables
-
-= 1.2.3 =
-* fix conflict with another plugin
-
-= 1.2.2 =
-* use cURL or file_get_contents for fetching the remote file
 
 = 1.2.0 =
 * Auto-resize form if needed
