@@ -42,7 +42,7 @@ a. After plugin installation and activation, visit *My Account* section on 123Co
 b. In the WordPress dashboard, while editing the page in the Visual mode, click on the 123ContactForm icon in the menu. Paste the API key there, press Connect and then choose the form that you want to publish (if you have built several forms you can include as many of them as you want). Press Embed and view the result.  
 
 
-Usage info, tips and tricks can be found in the [plugin homepage](http://www.123contactform.com/wordpress-contact-form-plugin.html) and [author's blog](http://blog.123contactform.com/category/wordpress-contact-form-plugin/).
+Usage info, tips and tricks can be found in the [plugin homepage](http://www.123contactform.com/wordpress-contact-form-plugin.html) and [author's blog](http://blog.123contactform.com/tag/wordpress-form/).
 
 == Frequently Asked Questions ==
 
@@ -56,7 +56,7 @@ The most effective way is using the API key.
 No, you don't have to paste the code again.
 
 
-Please see [author's blog](http://blog.123contactform.com/?s=wordpress).
+Please see [author's blog](http://blog.123contactform.com/tag/wordpress-form/).
 
 == Screenshots ==
 
@@ -74,7 +74,7 @@ Please see [author's blog](http://blog.123contactform.com/?s=wordpress).
 = 1.0.1 =
 * Added support for iFrame
 
-[See full change log in author's blog.](http://blog.123contactform.com/category/wordpress-contact-form-plugin/)
+[See full change log in author's blog.](http://blog.123contactform.com/tag/wordpress-form/)
 
 == Upgrade Notice ==
 
