@@ -67,6 +67,12 @@ Please see [author's blog](http://blog.123contactform.com/tag/wordpress-form/).
 
 == Changelog ==
 
+= 1.2.6 =
+* minor bug fixes
+
+= 1.2.5 =
+* minor bug fixes
+
 = 1.2.0 =
 * Auto-resize form if needed
 * Use 123ContactForm API Key to easily embed own forms
