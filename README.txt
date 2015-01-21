@@ -67,6 +67,9 @@ Please see [author's blog](http://blog.123contactform.com/tag/wordpress-form/).
 
 == Changelog ==
 
+= 1.3.0 =
+* support for Post fields
+
 = 1.2.6 =
 * minor bug fixes
 
