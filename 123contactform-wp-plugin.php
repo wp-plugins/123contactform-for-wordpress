@@ -4,7 +4,7 @@ Plugin Name: 123ContactForm for WordPress
 Plugin URI: http://www.123contactform.com/wordpress-contact-form-plugin.html
 Description: Contact Form plugin from 123ContactForm.com. Usage notes, tips and tricks, <a href="http://www.123contactform.com/wordpress-contact-form-plugin.html">here</a>.
 Author: 123ContactForm.com
-Version: 1.3.0
+Version: 1.3.1
 Author URI: http://www.123contactform.com/
 */
 
@@ -89,7 +89,7 @@ function cfp_connect() {
         $cfp_pub_key = $_POST["pk"];
         $message = $_POST["message"];
         $signature = base64_decode(str_replace(" ", "+", $_POST["signature"]));
-        if(!isset($cfp_pub_key) || $cfp_pub_key=="") { echo message("Key is not sent",0);exit(); } // Key is not sent
+        if(!isset($cfp_pub_key) || $cfp_pub_key=="") { echo cfp_message("Key is not sent",0);exit(); } // Key is not sent
         $verify = openssl_verify($message, $signature, base64_decode($cfp_pub_key), OPENSSL_ALGO_SHA1);
         if ($verify == 1) {
             if(!get_option("123cf_post_public_key")) {
@@ -97,11 +97,11 @@ function cfp_connect() {
             } else {
                 update_option("123cf_post_public_key",$cfp_pub_key);
             }
-            echo message("WordPress connected",1);exit();
+            echo cfp_message("WordPress connected",1);exit();
         } elseif ($verify == 0) {
-            echo message("Signature not verified",0);exit();
+            echo cfp_message("Signature not verified",0);exit();
         } else {
-           echo message("error: ".openssl_error_string(),0);exit(); 
+           echo cfp_message("error: ".openssl_error_string(),0);exit();
         }
         exit();
 }
@@ -143,7 +143,7 @@ function cfp_upload_image($post_id,$post_image, $post_image_name = null) {
 add_action( 'wp_ajax_cfp-new-post', 'cfp_new_post' );
 add_action( 'wp_ajax_nopriv_cfp-new-post', 'cfp_new_post' );
 function cfp_new_post() {
-    if(!cfp_authenticate()) { echo message("There was an error while trying to authenticate with wordpress",0); exit(); }
+    if(!cfp_authenticate()) { echo cfp_message("There was an error while trying to authenticate with wordpress",0); exit(); }
     $post_title = strip_tags(rawurldecode($_POST["post_title"]));
     $post_title = preg_replace("/&nbsp;/",' ',$post_title);
     $post_title = stripslashes($post_title);
@@ -197,9 +197,9 @@ function cfp_new_post() {
          if(isset($post_image)) {
               cfp_upload_image($post_id,$post_image,$post_image_name);   
         }
-        echo message("New post created",1); exit(); 
+        echo cfp_message("New post created",1); exit();
     }
-    echo message("There was an error while trying to create new post",0); exit();
+    echo cfp_message("There was an error while trying to create new post",0); exit();
 }
 function cfp_get_custom_post_fields() {    
     global $wpdb;
@@ -227,7 +227,7 @@ function insert_child_category($category,$wp_categories) {
 add_action( 'wp_ajax_cfp-get-wp-data', 'cfp_get_wp_data' );
 add_action( 'wp_ajax_nopriv_cfp-get-wp-data', 'cfp_get_wp_data' );
 function cfp_get_wp_data() { 
-    if(!cfp_authenticate()) { echo message("There was an error while trying to authenticate with wordpress",0); exit(); }
+    if(!cfp_authenticate()) { echo cfp_message("There was an error while trying to authenticate with wordpress",0); exit(); }
     global $wpdb;
     $data = array();
     $custom_fields = array();
@@ -257,8 +257,8 @@ function cfp_get_wp_data() {
 add_action( 'wp_ajax_cfp-check-connection', 'cfp_check_connection' );
 add_action( 'wp_ajax_nopriv_cfp-check-connection', 'cfp_check_connection' );
 function cfp_check_connection() { 
-    if(!cfp_authenticate()) { echo message("There was an error while trying to authenticate with wordpress",0); exit(); }
-    echo message("Connection OK",1); exit();
+    if(!cfp_authenticate()) { echo cfp_message("There was an error while trying to authenticate with wordpress",0); exit(); }
+    echo cfp_message("Connection OK",1); exit();
 }
 function cfp_authenticate() {
         if(!get_option( "123cf_post_public_key")) { return false; }
@@ -268,7 +268,7 @@ function cfp_authenticate() {
         $verify = openssl_verify($message, $signature, base64_decode($cfp_pub_key), OPENSSL_ALGO_SHA1);       
         return $verify;
 }
-function message($message,$status) {
+function cfp_message($message,$status) {
     $return_message = array("message"=>$message,"status"=>$status);
     return json_encode($return_message);
 }
