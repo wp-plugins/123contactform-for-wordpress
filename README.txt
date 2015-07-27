@@ -3,7 +3,7 @@ Contributors: 123contactform
 Donate link: http://www.123contactform.com/
 Tags: contact form, order form, contact, form, email, captcha, upload, files, 123contactform, survey, secure form, 
 Requires at least: 2.0.2
-Tested up to: 4.0.1
+Tested up to: 4.2.3
 Stable tag: 2.0.3
 
 Contact Form plugin from www.123ContactForm.com
@@ -55,6 +55,8 @@ The most effective way is using the API key.
 = If I change the form on 123ContactForm after I pasted it in WordPress, shall I paste the code again? =
 No, you don't have to paste the code again.
 
+= If I update my WordPress to a newer version, will my forms work? =
+Yes, your forms should be visible and working as before, as long as you have the latest version of 123ContactForm plugin. Still, some users reported that after updating the WP version, their forms got broken. So, please check your forms and in case they're broken, all you have to do is to republish them.
 
 Please see [author's blog](http://blog.123contactform.com/tag/wordpress-form/).
 
